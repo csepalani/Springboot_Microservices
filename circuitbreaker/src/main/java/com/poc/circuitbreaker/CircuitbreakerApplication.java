@@ -14,7 +14,7 @@ public class CircuitbreakerApplication {
 	@RequestMapping(value = "/producer")
 	public String producerMethod()
 	{
-		return "kathir vikki";
+		return "Palani Vel";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(CircuitbreakerApplication.class, args);

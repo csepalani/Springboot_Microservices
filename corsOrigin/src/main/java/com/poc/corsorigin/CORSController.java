@@ -16,7 +16,7 @@ public class CORSController {
 	
 	  @CrossOrigin(origins = "http://localhost:8080")
 	  @GetMapping("/model") public Model modelMethod(@RequestParam(required =
-	  false, defaultValue = "kathir") String name) {
+	  false, defaultValue = "palani") String name) {
 	  System.out.println("getting into the modelMethod");
 	  
 	  return new Model(count.incrementAndGet(), String.format(pattern, name)); }
@@ -24,7 +24,7 @@ public class CORSController {
 	
 	
 	@GetMapping("/modelwithoutcros")
-	public Model modelMethodwithoutCros(@RequestParam(required = false , defaultValue = "kathirvikki" ) String name)
+	public Model modelMethodwithoutCros(@RequestParam(required = false , defaultValue = "palanivel" ) String name)
 	{
 		System.out.println("getting into the modelMethod with out cros");
 		return new Model(count.incrementAndGet(), String.format(pattern, name));

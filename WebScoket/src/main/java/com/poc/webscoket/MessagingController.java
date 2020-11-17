@@ -14,6 +14,6 @@ public class MessagingController {
 	{
 		System.out.println("getting in to call");
 		Thread.sleep(1000);
-		return new SecondMessage("vikki, " + HtmlUtils.htmlEscape(msg.getName()) + "!");
+		return new SecondMessage("palani, " + HtmlUtils.htmlEscape(msg.getName()) + "!");
 	}
 }
